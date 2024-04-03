@@ -1,12 +1,13 @@
 #pragma once
 #include <iostream>
+#include <stdlib.h>
 #include "attaque.h"
-
+#include "plateau.h"
 
 class Animal
 {
     public:
-        /* Construteurs */
+        /* Constructeurs */
         Animal(int maxX, int maxY);
         Animal(int maxX, int maxY, int a, int b);
         /* Méthodes */
@@ -16,12 +17,14 @@ class Animal
         bool getVivant() const;
         Attaque getAttaque() const;
         void setVivant(bool alive);
-        bool attaque(Animal &a) const;
+        bool attaque(Animal &a);
         virtual void setAttaque()=0; // virtuelle pure
         virtual void deplace(int maxX, int maxY)=0; // virtuelle pure
-    private:
+    protected:
         /* Attributs */
         std::string nom;
+    private:
+        /* Attributs */
         int x;  // abscisse de l'animal
         int y;  // ordonnée de l'animal
         bool vivant;

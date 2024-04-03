@@ -2,10 +2,10 @@
 
 void Pierre::setAttaque()
 {
-
+    Attaque(0);
 }
 
-void Pierre::deplace(int maxX, int maxY)
+void Pierre::setNom()
 {
-
+    nom = nomAnimal;
 }
