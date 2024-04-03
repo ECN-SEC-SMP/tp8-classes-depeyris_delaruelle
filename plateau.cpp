@@ -31,7 +31,7 @@ Plateau::Plateau() : maxX(10), maxY(10)
         listAnimals.push_back(row);
     }
 
-    //Ajout des animaux
+    //  Ajout des animaux
     for (vector<Animal>::iterator it=listAnimals.begin(); it!=listAnimals.end(); ++it){
         if (*it.getNom() == "Pierre" ){
             plateau[*it.getX()][*it.getY()]=1;
@@ -54,7 +54,7 @@ Plateau::Plateau() : maxX(10), maxY(10)
 
 Plateau::Plateau(int x, int y) : maxX(x), maxY(y) 
 {
-    int listSize = (maxX*maxY)/4;
+    /*int listSize = (maxX*maxY)/4;
 
     // Initialisation de la liste d'animaux
     for (int i = 0; i < listSize; ++i){
@@ -110,7 +110,7 @@ Plateau::Plateau(int x, int y) : maxX(x), maxY(y)
         else{
             plateau[*it.getX()][*it.getY()]=5;
         }
-    }
+    }*/
 }
 
 /*

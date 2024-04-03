@@ -20,7 +20,7 @@ bool Attaque::resoudreAttaque(Attaque &pfc) const
     {
         return false; // A finir d'implémenter 
     } 
-    else if(pfc.getTypeAttaque() == 0 && type == 1 || pfc.getTypeAttaque() == 1 && type == 2 || pfc.getTypeAttaque() == 2 && type == 0) // Gagne avec combinaisons suivantes : Pierre/Feuille, Feuille/Ciseaux, Ciseaux/Pierre
+    else if((pfc.getTypeAttaque() == 0 && type == 1) || (pfc.getTypeAttaque() == 1 && type == 2) || (pfc.getTypeAttaque() == 2 && type == 0)) // Gagne avec combinaisons suivantes : Pierre/Feuille, Feuille/Ciseaux, Ciseaux/Pierre
     { 
         return true;
     } 

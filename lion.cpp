@@ -4,7 +4,10 @@
     Constructeur
 */
 Lion::Lion(){};
-Lion::Lion (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) {}
+Lion::Lion (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) 
+{
+    setNom();
+}
 
 /* 
     Méthodes

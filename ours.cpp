@@ -8,6 +8,7 @@ Ours::Ours (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) {}
 void Ours::setAttaque()
 {
     Attaque(1);
+    setNom();
 }
 
 void Ours::deplace(int maxX, int maxY)

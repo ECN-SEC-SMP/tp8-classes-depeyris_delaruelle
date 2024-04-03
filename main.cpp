@@ -4,13 +4,16 @@
 #include <stdlib.h>
 #include <time.h>
 #include "plateau.h"
+#include "loup.h"
 
 
 using namespace std;
 
 int main(){
     srand(time(NULL));
-    Plateau plateau;
-    plateau.affPlateau();
+    Plateau board;
+    //board.affPlateau();
+    /*Loup loup1;
+    cout << loup1.getNom() << endl;*/
     return 0;
 }

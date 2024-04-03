@@ -3,7 +3,14 @@
 /*
     Constructeur
 */
-Loup::Loup (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) {}
+Loup::Loup () : Animal() 
+{
+    setNom();
+}
+Loup::Loup (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) 
+{
+    setNom();
+}
 
 void Loup::setAttaque()
 {

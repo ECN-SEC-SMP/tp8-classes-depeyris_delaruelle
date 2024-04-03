@@ -2,10 +2,11 @@
 #include "animal.h"
 #include <stdlib.h>
 
-class Loup : Animal
+class Loup : public Animal
 {
     public:
         /* Constructeur */
+        Loup();
         Loup(int maxX, int maxY);
         /* Méthodes*/
         void setAttaque();
