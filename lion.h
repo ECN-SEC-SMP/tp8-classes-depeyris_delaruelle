@@ -1,7 +1,7 @@
 #pragma once
 #include "animal.h"
 
-class lion : Animal
+class Lion : Animal
 {
     public:
         void setAttaque();
