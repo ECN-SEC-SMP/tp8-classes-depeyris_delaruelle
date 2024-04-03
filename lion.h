@@ -2,9 +2,12 @@
 #include <iostream>
 #include "animal.h"
 
-class Lion : Animal
+class Lion : public Animal
 {
     public:
+        /* Constructeur */
+        Lion();
+        Lion(int maxX, int maxY);
         /* Méthodes */
         void setAttaque();
         void deplace(int maxX, int maxY);

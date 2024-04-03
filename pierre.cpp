@@ -1,8 +1,13 @@
 #include "pierre.h"
 
+/*
+    Constructeur
+*/
+Pierre::Pierre (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) {}
+
 void Pierre::setAttaque()
 {
-    Attaque(0);
+    typeAttaque = Attaque(0);
 }
 
 void Pierre::setNom()

@@ -1,9 +1,11 @@
 #pragma once
 #include "animal.h"
 
-class Pierre : Animal
+class Pierre : public Animal
 {
     public:
+        /* Constructeur */
+        Pierre(int maxX, int maxY);
         /* Méthodes */
         void setAttaque();
         void deplace(int maxX, int maxY);

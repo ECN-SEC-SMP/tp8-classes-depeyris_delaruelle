@@ -2,12 +2,12 @@
 #include <iostream>
 #include <stdlib.h>
 #include "attaque.h"
-#include "plateau.h"
 
 class Animal
 {
     public:
         /* Constructeurs */
+        Animal();
         Animal(int maxX, int maxY);
         Animal(int maxX, int maxY, int a, int b);
         /* Méthodes */
@@ -23,10 +23,8 @@ class Animal
     protected:
         /* Attributs */
         std::string nom;
-    private:
-        /* Attributs */
         int x;  // abscisse de l'animal
         int y;  // ordonnée de l'animal
-        bool vivant;
+        bool vivant;        
         Attaque typeAttaque;
 };

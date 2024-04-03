@@ -4,6 +4,7 @@
 /*
     Constructeurs
 */
+Animal::Animal(){};
 Animal::Animal (int maxX, int maxY) : x(rand()%maxX), y(rand()%maxY){}
 Animal::Animal (int maxX, int maxY, int a, int b) : x(a), y(b){}
 
@@ -65,5 +66,6 @@ void Animal::setVivant(bool alive)
 */
 bool Animal::attaque(Animal &a)
 {
+
 }
 

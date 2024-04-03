@@ -1,9 +1,11 @@
 #pragma once
 #include "animal.h"
+#include "pierre.h"
+#include "lion.h"
+#include "loup.h"
+#include "ours.h"
 #include <iostream>
 #include <vector>
-#include <time.h>
-#include <math.h>
 
 class Plateau
 {
@@ -18,7 +20,7 @@ class Plateau
         int getY();
     private:
         /* Attributs */
-        std::vector<Animal> listAnimals;
+        std::vector<Animal*> listAnimals;
         std::vector<std::vector<int>> plateau;
         int maxX;
         int maxY;
