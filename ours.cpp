@@ -3,7 +3,12 @@
 /*
     Constructeur
 */
-Ours::Ours (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) {}
+Ours::Ours(){}
+Ours::Ours (int maxX, int maxY) : Animal(maxX,maxY) 
+{
+    nom = nomAnimal;
+    setAttaque();
+}
 
 void Ours::setAttaque()
 {
@@ -15,9 +20,4 @@ void Ours::deplace(int maxX, int maxY)
     int8_t dep[4] = {-2,-1,1,2};
     x = (x + dep[rand()%4])%maxX;
     y = (y + dep[rand()%4])%maxY;
-}
-
-void Ours::setNom()
-{
-    nom = nomAnimal;
 }

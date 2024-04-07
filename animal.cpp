@@ -1,12 +1,13 @@
 #include "animal.h"
+#include "attaque.h"
 
 
 /*
     Constructeurs
 */
-Animal::Animal(){};
+Animal::Animal(){}
 Animal::Animal (int maxX, int maxY) : x(rand()%maxX), y(rand()%maxY){}
-Animal::Animal (int maxX, int maxY, int a, int b) : x(a), y(b){}
+Animal::Animal (int maxX, int maxY, int a, int b) : x(a%maxX), y(b%maxY){}
 
 /*
     Méthodes
@@ -66,6 +67,7 @@ void Animal::setVivant(bool alive)
 */
 bool Animal::attaque(Animal &a)
 {
-
+    //resoudreAttaque(a);
+    return true;
 }
 

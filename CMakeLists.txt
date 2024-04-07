@@ -7,7 +7,7 @@ project(Animals)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra")
 
 # Ajouter les fichiers source à la variable SOURCES
-set(SOURCES main.cpp animal.cpp lion.cpp pierre.cpp loup.cpp ours.cpp attaque.cpp)
+set(SOURCES main.cpp animal.cpp lion.cpp pierre.cpp loup.cpp ours.cpp attaque.cpp plateau.cpp)
 
 # Ajouter l'exécutable
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -22,6 +22,7 @@ add_library(pierre pierre.cpp)
 add_library(loup loup.cpp)
 add_library(ours ours.cpp)
 add_library(attaque attaque.cpp)
+add_library(plateau plateau.cpp)
 
 # Lier toutes les bibliothèques à l'exécutable
 target_link_libraries(${PROJECT_NAME} animal attaque loup lion pierre ours)

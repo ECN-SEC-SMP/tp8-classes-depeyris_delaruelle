@@ -23,8 +23,8 @@ class Animal
     protected:
         /* Attributs */
         std::string nom;
-        int x;  // abscisse de l'animal
-        int y;  // ordonnée de l'animal
-        bool vivant;        
+        int x = 0;  // abscisse de l'animal
+        int y = 0;  // ordonnée de l'animal
+        bool vivant = true;        
         Attaque typeAttaque;
 };

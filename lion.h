@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include "animal.h"
 
 class Lion : public Animal
@@ -11,7 +10,6 @@ class Lion : public Animal
         /* Méthodes */
         void setAttaque();
         void deplace(int maxX, int maxY);
-        void setNom();
     private:
-        std::string nomAnimal = "Lion";
+        std::string nomAnimal = "L";
 };

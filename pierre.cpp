@@ -3,14 +3,20 @@
 /*
     Constructeur
 */
-Pierre::Pierre (int maxX, int maxY) : Animal(rand()%maxX,rand()%maxY) {}
+Pierre::Pierre(){}
+Pierre::Pierre (int maxX, int maxY) : Animal(maxX,maxY)
+{
+    nom = nomAnimal;
+    setAttaque();
+}
 
 void Pierre::setAttaque()
 {
     typeAttaque = Attaque(0);
 }
 
-void Pierre::setNom()
+void Pierre::deplace(int maxX, int maxY)
 {
-    nom = nomAnimal;
+    x = x % maxX;
+    y = y % maxY;
 }

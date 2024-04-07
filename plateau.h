@@ -15,13 +15,13 @@ class Plateau
         Plateau(int x, int y);
         /* Méthodes */
         void affPlateau();
+        void initPlateau();
         /* Accesseurs */
         int getX();
         int getY();
     private:
         /* Attributs */
         std::vector<Animal*> listAnimals;
-        std::vector<std::vector<int>> plateau;
         int maxX;
         int maxY;
 };
